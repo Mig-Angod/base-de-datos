@@ -1,0 +1,112 @@
+.contenedor {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #000;
+    width: 800px;
+    margin-top: 0;
+}
+.encabezado {
+    padding-top: 10px;
+    background-color: rgb(153, 155, 153);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 800px;
+    height: 90px;
+    border: 1px solid;
+    clear: both;
+}
+.izquierda {
+    float: left;
+    width: 400px;
+    height: auto;
+  
+    background-color: green;
+    padding-bottom: 10px;
+    border: 1px solid#000;
+    clear: both; 
+}
+.centro {
+    clear: both;
+    float: left;
+    width: 1px solid;
+    height: auto;
+  
+    background-color: white;
+    padding-bottom: 10px;
+
+}
+.derecha {
+    float: left;
+    width: 400px;
+    height: auto;
+    background-color: green;
+    padding-bottom: 10px;
+    border: 1px solid#000;
+    clear: both;
+}
+
+.pie {
+    clear: both;/*para alinear*/
+    padding-top: 10px;
+    background-color: #06a3fe;
+    color: #FFFFFF;
+    font-size: auto;
+    font-weight: bold;
+    
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+   
+}
+ul.menuvertical {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    width: 150px;;
+    border-left: 1px solid orange;
+    left: 235px;
+    position: relative;
+}
+
+ul.menuvertical li a:link,
+ul.menuvertical li a:visited {
+    padding: .3em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-top: 1px solid orange;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+ul.menuvertical li a:hover {
+    background-color: red;
+}
+.roj{
+    color: red;
+}
+.titulo1{
+    top: 15px;
+    left: 570px;
+    position: fixed;
+    color: red;
+    margin: auto 0;
+    font-size: 20px;
+}
+.titulo2{
+    top: 40px;
+    left: 910px;
+    position: fixed;
+    color: blue;
+    margin: auto 0;
+    font-size: 17.5px;
+}
+.titulo3{
+    top: 50px;
+    left: 500px;
+    position: fixed;
+    font-size: 17px;
+    color: rgb(195, 146, 54);
+}

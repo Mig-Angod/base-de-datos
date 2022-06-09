@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fecha=prompt("fecha (dd/mm/aaaa): ");
+        //fecha = '05/02/2022';
+        di= ['cero','primero','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciseis','diecisiete','dieciocho','diecinueve','veinte','veintiuno','veintidos','veintitres','veinticuatro','veinticinco','veintiseis','veintisiete','veintiocho','veintinueve','treinta','treinta y uno'];
+        me=['np','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        d = fecha[0]+fecha[1];
+        m=fecha[3]+fecha[4];
+        an=fecha[8]+fecha[9];
+        //var f = new Date();
+        //f=fecha;
+        //var a = f.getFullYear();
+        //var dia = String();
+        //dia = f.getDay();
+        //var mes = f.getMonth();
+        mes=me[parseInt(m)];
+        dia=di[parseInt(d)];
+        a='dosmil '+di[parseInt(an)];
+        document.write(dia +' de '+ mes + ' del '+a);
+        document.write('<br>');
+        document.write(fecha);
+    </script>
+</body>
+
+</html>

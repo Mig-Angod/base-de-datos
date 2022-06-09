@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        num = parseInt(prompt("numero:"));
+        con = 0;
+        document.write('<table table BORDER="1" CELLPADDING="10" CELLSPACING=0 >');
+        document.write('<tr bgcolor="blue">');
+        document.write('<td>Operador 1</td>');
+        document.write('<td>Operacion</td>');
+        document.write('<td>Operador2</td>');
+        document.write('<td>&nbsp&nbsp&nbsp</td>');
+        document.write('<td>Resultado</td>');
+        document.write('</tr>');
+        for (i = 1; i <= 10; i++) {
+
+            if (i % 2 == 0) {
+                document.write('<tr bgcolor="yellow">');
+            }
+            else {
+                document.write('<tr>');
+            }
+            for (f = 0; f <= 4; f++) {
+                if (f == 0) {
+                    document.write('<td align="center">' + num + '</td>');
+                }
+                if (f == 1) {
+                    document.write('<td align="center">+</td>')
+                }
+                if (f == 2) {
+                    con++;
+                    document.write('<td align="center">' + con + '</td>')
+                }
+                if (f == 3) {
+                    document.write('<td align="center">=</td>')
+                }
+                if (f == 4) {
+                    acum = con + num;
+                    document.write('<td align="center">' + acum + '</td>')
+                }
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+    </script>
+</body>
+
+</html>

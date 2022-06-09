@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        cadena = prompt('cadena: ');
+        var c = cadena;
+        filas = cadena.length;
+        con1 = 0;
+        con2 = filas - 1;
+        espacio = (filas - 2)*2-1;
+        document.write(cadena);
+        for (i = 1; i <= filas - 2; i++) {
+            con1++;
+            con2--;
+            document.write('<br>');
+            document.write(cadena[con1]);
+            for (f = 1; f <= espacio; f++) {
+                document.write("&nbsp;");
+            }
+            console.log(cadena.length);
+            document.write(cadena[con2]);
+        }
+        document.write('<br>');
+        for (i = filas - 1; i >= 0; i--) {
+            document.write(cadena[i]);
+        }
+    </script>
+</body>
+
+</html>

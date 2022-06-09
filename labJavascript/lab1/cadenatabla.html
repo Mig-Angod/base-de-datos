@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        cadena=prompt('cadena: ');
+        var c=cadena;
+        filas=cadena.length;
+        con1=0;
+        con2=filas-1;
+        espacio=filas-2;
+        document.write('<table table BORDER="1" CELLPADDING="10" CELLSPACING=0>');
+        document.write('<tr bgcolor="red">');
+            for(i=0;i<filas;i++){
+                document.write('<td>'+cadena[i]+'</td>');
+            }
+            document.write('</tr>');
+        for(i=1;i<=filas-2;i++){
+                con1++;
+                con2--;
+                document.write('<tr>');
+                document.write('<td bgcolor="red">'+cadena[con1]+'</td>');
+                for(f=1;f<=espacio;f++){
+                    document.write("<td bgcolor='yellow'>&nbsp;</td>");
+                }
+                document.write('<td bgcolor="red">'+cadena[con2]+'</td>');
+        }
+        document.write('</tr><tr bgcolor="red">');
+        for(i=filas-1;i>=0;i--){
+            document.write('<td>'+cadena[i]+'</td>');
+        }
+        document.write('</tr>')
+    </script>
+</body>
+</html>

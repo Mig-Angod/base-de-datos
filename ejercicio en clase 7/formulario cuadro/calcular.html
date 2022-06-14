@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="a">a</label>
+    <input type="number" name="a" id="a">
+    <br>
+    <label for="b">b</label>
+    <input type="number" name="b" id="b">
+    <br>
+    <label for="c">c</label>
+    <input type="number" name="c" id="c">
+
+    <input type="button" value="ir" onclick="sistema()">
+    <br>resultado:
+    <br>
+    <label for="x1">x1:</label>
+    <input type="text" name="x1" id="x1">
+    <br>
+    <label for="x2">x2:</label>
+    <input type="text" name="x2" id="x2">
+    <script>
+        function sistema() {
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            c = parseInt(document.getElementById("c").value);
+            if ((b * b - 4 * a * c) >= 0) {
+                x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+                x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+                document.getElementById('x1').value = x1;
+                document.getElementById('x2').value = x2;
+            }
+        }
+            //console.log(sistema);
+    </script>
+
+
+
+</body>
+
+</html>

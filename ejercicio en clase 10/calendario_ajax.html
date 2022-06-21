@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #contenedor1 {
+            width: 190px;
+            height: 30px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #contenedor2 {
+            width: 190px;
+            height: 30px;
+            border: 1px solid black;
+            float: right;
+        }
+
+        #num {
+            width: 95px;
+            height: 29px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #tex {
+            width: 93px;
+            height: 29px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #anio {
+            width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 0px auto;
+            float: right;
+        }
+
+        #mes {
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 0px auto;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="javascript:ver()" method="GET" id="contenedor">
+        <div id="contenedor1">
+            <dvi id="num">Años</dvi>
+            <select name="anio" id="anio">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+                <option value="2040">2040</option>
+            </select>
+
+        </div>
+        <div id="contenedor2">
+            <div id="tex">Mes</div>
+            <select name="mes" id="mes">
+                <option value="1">enero</option>
+                <option value="2">febrero</option>
+                <option value="3">marzo</option>
+                <option value="4">abril</option>
+                <option value="5">mayo</option>
+                <option value="6">junio</option>
+                <option value="7">julio</option>
+                <option value="8">agosto</option>
+                <option value="9">septiembre</option>
+                <option value="10">octubre</option>
+                <option value="11">noviembre</option>
+                <option value="12">diciembre</option>
+            </select>
+            <input type="submit" value="ver">
+        </div>
+        <center>
+            <div id="contenido"></div>
+        </center>
+
+    </form>
+    <script>
+        function ver() {
+            var anio = parseInt(document.getElementById("anio").value);
+            var mes = parseInt(document.getElementById("mes").value);
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", "calendario.php?mes=" + mes + "&anio=" + anio, true);
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    document.getElementById("contenido").innerHTML = ajax.responseText;
+                }
+            }
+            ajax.send();
+
+        }
+    </script>
+</body>
+
+</html>

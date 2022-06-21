@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    width: 20px;
+            height: 10px;
+            border: 1px solid black;
+}
+    </style>
+</head>
+
+<body>
+        <form action="javascript:anadir()">
+            comprar:
+            <input type="text" id="tex" value="nuevo texto">
+            <input type="submit" value="anadir">
+        </form>
+        <ul id="compra"><br></ul>
+<script>
+    var elemento = document.getElementById("tex").value;
+    text=elemento;
+    function anadir(){
+        console.log(text);
+        compra.textContent=compra.textContent+" , "+elemento;
+    }
+    
+    /*class objetos{
+        constructor(objeto){
+            this.objeto=objeto;
+        }
+        mostrar(){
+            document.write("<p>objeto: " + this.objeto + "</p>");
+        }
+    }
+    
+    function comprar(){
+        obj = new objetos( document.getElementById("compra").value);
+    objetos.mostrar();
+    }
+    */
+</script>
+</body>
+
+</html>

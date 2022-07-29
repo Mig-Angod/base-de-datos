@@ -1,0 +1,33 @@
+.contenedor{
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid orange;
+}
+.titulo{
+    clear: none;
+    width: 100%;
+}
+.nombre{
+    float: left;
+    width: 848px;
+    background-color: green;
+    border: 2px solid green;
+    text-align: center;
+}
+.boton1{
+    float: left;
+    border: solid 2px orangered;
+}
+.boton2{
+    float: right;
+    border: solid 2px orangered;
+}
+#contenido{
+    width: 100%;
+}
+#resultado{
+    clear: both;
+    width: 100%;
+    background-color: rgb(255, 0, 144);
+    text-align: center;
+}

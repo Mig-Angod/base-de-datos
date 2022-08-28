@@ -1,0 +1,42 @@
+<table BORDER=1 CELLPADDING=5 CELLSPACING=5>
+    <tr>
+        <td id="1">*</div></td>
+        <td id="2">*</div></td>
+        <td id="3">*</td>
+    </tr>
+    <tr>
+        <td id="4">*</td>
+        <td id="5">*</td>
+        <td id="6">*</td>
+    </tr>
+    <tr>
+        <td id="7">*</td>
+        <td id="8">*</td>
+        <td id="9">*</td>
+    </tr>
+    <tr >
+        <td colspan="2" onclick="aceptar()">aceptar</td>
+        <td colspan="2" onclick="limpiar()">limpiar</td>
+    </tr>
+    <div id="titulo">titulo</div>
+</table>
+<script>
+   // document.getElementById("uno").addEventListener("mouseover", uno());
+   document.getElementById("1").addEventListener("mousemover", ver("1"));
+    document.getElementById("2").addEventListener("mouseover", ver("2"));
+    function ver(numero){
+        document.getElementById(numero).innerHTML = numero;
+    }
+    function uno(){
+        document.getElementById('uno').textContent=1;
+    }
+   function aceptar(){
+    document.getElementById('titulo').style.backgroundColor="yellow";
+   }
+   function limpiar(){
+        document.getElementById('titulo').innerHTML="";
+        document.getElementById('tituto').eve
+   }
+
+    
+</script>

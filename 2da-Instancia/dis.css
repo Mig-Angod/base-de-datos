@@ -1,0 +1,33 @@
+#contenedor{
+    width: 900px;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+#titulo{
+    margin: 0px auto;
+    float: left;
+    width: 714px;
+    border: 1px solid red;
+    height: 50px;
+}
+#imagen{
+    float: right;
+}
+#contenido{
+    border: 1px solid blue;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 714px;
+    float: left;
+}
+#menu{
+    clear: both;
+    width: 100px;
+    border:  1px solid blue;
+    float: right;
+}
+#pie{
+    clear: both;
+    width: 100%;
+}
